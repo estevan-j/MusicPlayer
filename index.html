@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card-music">
+            <img id="cover" src="/img/cover-1.png" alt="MusicImg">
+        </div>
+        <div class="card-infor">
+            <h4 class="title"></h4>
+            <p class="artist"></p>
+        </div>
+        <div class="card-time">
+            <div class="duration-tags">
+                <span id="start-duration">0:00</span> 
+                <span id="duration"></span>
+            </div>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+        <div class="card-play">
+            <audio id="audioPlayer" src=""></audio>
+            <button>
+                <img id="btnLast" src="img/Stop_and_play_fill-1.svg" alt="before">
+            </button>
+            <button>
+                <img id="btnPlay" src="img/Play_fill.svg" alt="play">
+            </button>
+            <button>
+                <img id="btnNext" src="img/Stop_and_play_fill_reverse.svg" alt="next">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
